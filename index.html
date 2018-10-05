@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!--<link href="fonts/anton-v9-latin-regular.ttf" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+    <!--<link href="fonts/baumans-v7-latin-regular.ttf" rel="stylesheet">-->
+    <title>Irene Kukhar</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <div class="wrapper">
+            <input type="checkbox" id="check-menu" class="check_menu">
+            <label for="check-menu">MENU</label>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            <nav class="header-nav">
+                <a href="#home"><b>Home</b></a>
+                <a href="#about_me"><b>About Me</b></a>
+                <a href="#portfolio"><b>Portfolio</b></a>
+                <a href="#services"><b>Services</b></a>
+                <a href="#contact_me"><b>Contact Me</b></a>
+            </nav>
+        </div>
+    </header>
+    <!--Content-->
+    <main>
+        <section id="home" class="background_image">
+            <div>
+                <img class="avatar_image" src="images/photographer_avatar.png" alt="Irene Kukhar">
+                <div>
+                    <h1>Irene Kukhar</h1>
+                    <p class="smaller-text">portrait photographer</p>
+                </div>
+            </div>
+        </section>
+        <section id="about_me">
+            <h2>About Me</h2>
+            <div class="personal_info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris
+                    molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros
+                    sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare
+                    accumsan, blandit sed diam.
+                </p>
+                <aside>
+                    <img class="photographer_image" src="images/photographer.png" alt="Irene Kukhar">
+                </aside>
+            </div>
+        </section>
+        <!--Portfolio-->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <h3>Family Photo Session</h3>
+            <div class="portfolio">
+                <img class="portfolio_img" src="images/family1.png" alt="Family Photo">
+                <img class="portfolio_img" src="images/family1.png" alt="Family Photo">
+                <img class="portfolio_img" src="images/family1.png" alt="Family Photo">
+            </div>
+            <h3>Wedding Photo Session</h3>
+            <div class="portfolio">
+                <img class="portfolio_img" src="images/wedding1.png" alt="Wedding Photo">
+                <img class="portfolio_img" src="images/wedding1.png" alt="Wedding Photo">
+                <img class="portfolio_img" src="images/wedding1.png" alt="Wedding Photo">
+            </div>
+            <h3>Individual Photo Session</h3>
+            <div class="portfolio">
+                <img class="portfolio_img" src="images/individual1.png" alt="Individual Photo">
+                <img class="portfolio_img" src="images/individual1.png" alt="Individual Photo">
+                <img class="portfolio_img" src="images/individual1.png" alt="Individual Photo">
+            </div>
+        </section>
+        <!--Services-->
+        <section id="services">
+            <h2>Services and Prices</h2>
+            <div class="services">
+                <div class="column">
+                    <p>Family Photo Session</p>
+                    <p class="price">$26</p>
+                </div>
+                <div class="column">
+                    <p>Wedding Photo Session</p>
+                    <p class="price">$147</p>
+                </div>
+                <div class="column">
+                    <p>Individual Photo Session</p>
+                    <p class="price">$89</p>
+                </div>
+            </div>
+        </section>
+        <!--Contact Me-->
+        <section id="contact_me" class="contact_me">
+            <h2>Contact Me</h2>
+            <p>Please submit your request and I will contact you as soon as possible.</p>
+            <form action="https://formspree.io/dan.kukhar@gmail.com" method="POST">
+                <div class="form_fields">
+                    <div class="form_right">
+                        <label for="firstname">Your name:</label>
+                    </div>
+                    <div class="form_left">
+                        <input type="text" id="firstname" name="firstname" class="input_size" placeholder="Name*" />
+                    </div>
+                </div>
+                <div class="form_fields">
+                    <div class="form_right">
+                        <label for="email">Your email:</label>
+                    </div>
+                    <div class="form_left">
+                        <input type="email" id="email" name="email" class="input_size" placeholder="Email*" />
+                    </div>
+                </div>
+                <div class="form_fields">
+                    <div class="form_right">
+                        <label for="date">Preferable photo session date:</label>
+                    </div>
+                    <div class="form_left">
+                        <input type="date" id="date" name="photo_session_date" required value="2018-09-28" min="2018-09-28" />
+                    </div>
+                </div>
+                <div class="form_fields">
+                    <div class="form_right right_mobile">
+                        <span>Photo session type:</span>
+                    </div>
+                    <div class="form_left">
+                        <label>
+                        <input type="radio" name="photo_type" value="family">
+                        Family   
+                    </label>
+                        <label>
+                        <input type="radio" name="photo_type" value="wedding">
+                        Wedding   
+                    </label>
+                        <label>
+                        <input type="radio" name="photo_type" value="individual" checked>
+                        Individual  
+                    </label>
+                    </div>
+                </div>
+                <div class="form_fields">
+                    <div class="form_right">
+                        <span>Your message:</span>
+                    </div>
+                    <div class="form_left">
+                        <textarea name="comment" rows="5">You can leave additional message here.</textarea>
+                    </div>
+                </div>
+                <div class="form_fields form_mobile">
+                    <div class="form_right subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                    </div>
+                    <div class="form_left">
+                        <label for="subscribe">I want receive notifications about promo photo sessions.</label>
+                    </div>
+                </div>
+                <div class="form_fields">
+                    <div class="form_right">
+                    </div>
+                    <div class="form_left">
+                        <span class="required-field">* - Required fields.</span>
+                    </div>
+                </div>
+                <div class="form_fields">
+                    <div class="form_right">
+                    </div>
+                    <div class="form_left">
+                        <input type="Submit" name="button" class="submit_button" value="Submit">
+                    </div>
+                </div>
+            </form>
+            <h4>Contacts:</h4>
+            <div class="contacts">
+                <div>Lviv, Ukraine </div>
+                <div>Phone number: +380331231231</div>
+                <div>Email: example@domain.tld</div>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <p class="footer_text">2018 All rights reserved</p>
+    </footer>
+    <script src="js/better-date-input-polyfill/bower_components/better-dom.js"></script>
+    <script src="js/better-date-input-polyfill/build/better-dateinput-polyfill.js"></script>
+</body>
+
+</html>
